@@ -1,0 +1,1 @@
+/root/Sources/BigC++/Chapter1/R1_23/build/CMakeFiles/r1_23.dir

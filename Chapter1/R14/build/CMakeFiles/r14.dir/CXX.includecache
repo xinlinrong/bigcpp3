@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/root/Sources/BigC++/Chapter1/R14/area.hpp
+iostream
+-
+string
+-
+vector
+-
+
+/root/Sources/BigC++/Chapter1/R14/main.cpp
+iostream
+-
+area.hpp
+/root/Sources/BigC++/Chapter1/R14/area.hpp
+

@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/root/Sources/BigC++/Chapter1/R1_25/main.cpp
+algorithm
+-
+cmath
+-
+iostream
+-
+string
+-
+vector
+-
+

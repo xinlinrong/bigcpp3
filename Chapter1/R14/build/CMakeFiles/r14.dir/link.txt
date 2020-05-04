@@ -1,0 +1,1 @@
+/usr/bin/c++   -g    CMakeFiles/r14.dir/area.cpp.o CMakeFiles/r14.dir/main.cpp.o  -o r14 -rdynamic 

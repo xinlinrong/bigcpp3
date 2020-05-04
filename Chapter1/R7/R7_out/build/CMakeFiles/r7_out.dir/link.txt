@@ -1,0 +1,1 @@
+/usr/bin/c++   -g    CMakeFiles/r7_out.dir/main.cpp.o  -o r7_out -rdynamic 

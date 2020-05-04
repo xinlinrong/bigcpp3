@@ -1,0 +1,42 @@
+[Buildset]
+BuildItems=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x01\x00\x00\x00\x0b\x00\x00\x00\x00\x01\x00\x00\x00\n\x00R\x001\x00_\x002\x006)
+
+[CMake]
+Build Directory Count=1
+Current Build Directory Index=0
+ProjectRootRelative=./
+
+[CMake][CMake Build Directory 0]
+Build Directory Path=file:///root/Sources/BigC++/Chapter1/R1_26/build
+Build Type=Debug
+CMake Binary=file:///usr/bin/cmake
+Environment Profile=
+Extra Arguments=
+Install Directory=file:///usr/local
+
+[Defines And Includes][Compiler]
+Name=GCC
+Path=gcc
+Type=GCC
+
+[Launch]
+Launch Configurations=Launch Configuration 1
+
+[Launch][Launch Configuration 1]
+Configured Launch Modes=execute
+Configured Launchers=nativeAppLauncher
+Name=r1_26
+Type=Native Application
+
+[Launch][Launch Configuration 1][Data]
+Arguments=
+Configured from ProjectItem=R1_26,r1_26
+Dependencies=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x00)
+Dependency Action=Build
+EnvironmentGroup=
+Executable=file:///root/Sources/BigC++/Chapter1/R1_26/
+External Terminal=konsole --noclose --workdir %workdir -e %exe
+Project Target=R1_26,r1_26
+Use External Terminal=true
+Working Directory=file:///root/Sources/BigC++/Chapter1/R1_26/build/
+isExecutable=false

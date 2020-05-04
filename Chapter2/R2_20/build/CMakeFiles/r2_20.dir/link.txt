@@ -1,0 +1,1 @@
+/usr/bin/c++   -g    CMakeFiles/r2_20.dir/main.cpp.o  -o r2_20 -rdynamic 

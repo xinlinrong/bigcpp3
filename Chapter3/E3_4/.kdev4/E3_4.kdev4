@@ -1,0 +1,42 @@
+[Buildset]
+BuildItems=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x01\x00\x00\x00\x0b\x00\x00\x00\x00\x01\x00\x00\x00\x08\x00E\x003\x00_\x004)
+
+[CMake]
+Build Directory Count=1
+Current Build Directory Index=0
+ProjectRootRelative=./
+
+[CMake][CMake Build Directory 0]
+Build Directory Path=file:///root/Sources/BigC++/Chapter3/E3_4/build
+Build Type=Debug
+CMake Binary=file:///usr/bin/cmake
+Environment Profile=
+Extra Arguments=
+Install Directory=
+
+[Defines And Includes][Compiler]
+Name=GCC
+Path=gcc
+Type=GCC
+
+[Launch]
+Launch Configurations=Launch Configuration 0
+
+[Launch][Launch Configuration 0]
+Configured Launch Modes=execute
+Configured Launchers=nativeAppLauncher
+Name=e3_4
+Type=Native Application
+
+[Launch][Launch Configuration 0][Data]
+Arguments=
+Configured from ProjectItem=E3_4,e3_4
+Dependencies=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x00)
+Dependency Action=Nothing
+EnvironmentGroup=
+Executable=file:///root/Sources/BigC++/Chapter3/E3_4/
+External Terminal=konsole --noclose --workdir %workdir -e %exe
+Project Target=E3_4,e3_4
+Use External Terminal=true
+Working Directory=file:///root/Sources/BigC++/Chapter3/E3_4/build/
+isExecutable=false

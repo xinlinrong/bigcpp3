@@ -1,0 +1,1 @@
+/root/Sources/BigC++/Chapter2/P2_15/build/CMakeFiles/p2_15.dir

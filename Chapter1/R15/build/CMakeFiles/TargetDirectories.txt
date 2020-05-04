@@ -1,0 +1,1 @@
+/root/Sources/BigC++/Chapter1/R15/build/CMakeFiles/r15.dir
