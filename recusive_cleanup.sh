@@ -13,6 +13,13 @@ function clean_top_dir()
             make clean;
             cd --;
         fi;
+        if [ -f "$current_dir/Makefile" ]
+        then
+            cd $current_dir;
+            echo -e $current_dir;
+            make clean;
+            cd --;
+        fi;
     done;
 }
 
