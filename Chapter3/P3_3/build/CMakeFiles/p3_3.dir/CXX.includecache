@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/myvm-01/cpp/bigcpp3_my_solution/Chapter3/P3_3/main.cpp
+iostream
+-
+string
+-
+vector
+-
+algorithm
+-
+
