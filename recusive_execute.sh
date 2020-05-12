@@ -11,19 +11,22 @@ function clean_top_dir()
         then
             cd $current_dir;
             echo -e $current_dir;
-            make clean;
-            rm -rf $current_dir/*;
+            if [ -f "$current_dir/Makefile" ]
+            then
+                make clean;
+                rm -rf $current_dir/*;
+            fi
             touch $current_dir/.build;
             cd --;
-        fi;
+        fi
         if [ -f "$current_dir/Makefile" ]
         then
             cd $current_dir;
             echo -e $current_dir;
             make clean;
             cd --;
-        fi;
-    done;
+        fi
+    done
 }
 
 # 全部 build
@@ -40,15 +43,15 @@ function build_top_dir()
             cmake -DCMAKE_BUILD_TYPE=DEBUG ../;
             make;
             cd --;
-        fi;
+        fi
         if [ -f "$current_dir/Makefile" ]
         then
             cd $current_dir;
             echo -e $current_dir;
             make;
             cd --;
-        fi;
-    done;
+        fi
+    done
 }
 
 
