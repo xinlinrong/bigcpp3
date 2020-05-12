@@ -13,6 +13,7 @@ function clean_top_dir()
             echo -e $current_dir;
             make clean;
             rm -rf $current_dir/*;
+            touch $current_dir/.build;
             cd --;
         fi;
         if [ -f "$current_dir/Makefile" ]
