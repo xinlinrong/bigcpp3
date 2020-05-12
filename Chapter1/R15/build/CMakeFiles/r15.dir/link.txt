@@ -1,1 +1,0 @@
-/usr/bin/c++   -g    CMakeFiles/r15.dir/main.cpp.o  -o r15 -rdynamic 

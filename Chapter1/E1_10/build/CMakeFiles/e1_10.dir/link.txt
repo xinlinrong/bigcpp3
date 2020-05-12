@@ -1,1 +1,0 @@
-/usr/bin/c++   -g    CMakeFiles/e1_10.dir/main.cpp.o  -o e1_10 -rdynamic 

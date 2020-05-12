@@ -1,1 +1,0 @@
-/root/Sources/BigC++/Chapter1/E1_6/build/CMakeFiles/e1_6.dir

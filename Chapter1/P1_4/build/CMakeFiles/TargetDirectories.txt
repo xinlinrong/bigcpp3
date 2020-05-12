@@ -1,1 +1,0 @@
-/root/Sources/BigC++/Chapter1/P1_4/build/CMakeFiles/p1_4.dir

@@ -1,1 +1,0 @@
-/usr/bin/c++   -g    CMakeFiles/r12_r13.dir/main.cpp.o CMakeFiles/r12_r13.dir/account.cpp.o  -o r12_r13 -rdynamic 

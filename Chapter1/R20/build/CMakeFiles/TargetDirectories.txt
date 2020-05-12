@@ -1,1 +1,0 @@
-/root/Sources/BigC++/Chapter1/R20/build/CMakeFiles/r20.dir

@@ -1,1 +1,0 @@
-/usr/bin/c++   -g    CMakeFiles/r1_22.dir/robot.cpp.o CMakeFiles/r1_22.dir/grassplot.cpp.o CMakeFiles/r1_22.dir/main.cpp.o  -o r1_22 -rdynamic 
