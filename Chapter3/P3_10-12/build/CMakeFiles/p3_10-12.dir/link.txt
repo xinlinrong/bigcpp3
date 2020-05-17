@@ -1,1 +1,0 @@
-/usr/bin/c++  -g  -rdynamic CMakeFiles/p3_10-12.dir/shape.cpp.o CMakeFiles/p3_10-12.dir/main.cpp.o  -o p3_10-12 
