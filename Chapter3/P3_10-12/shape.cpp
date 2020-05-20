@@ -8,6 +8,8 @@
 
 using namespace chapter3::shape;
 
+static const double PI = 3.14159265;
+
 // 获取坐标
 vector<string> shape_utils::get_coordinate(string line)
 {
@@ -110,4 +112,58 @@ double shape_utils::get_coordinate_y(string line)
 bool shape_utils::is_equal(double numericFirst, double numericSecond, int scale)
 {
     return (abs(numericFirst - numericSecond) < pow(10, -1 * scale));
+}
+
+// 获取两点之间的距离
+double shape_utils::get_distance(shape_point pa, shape_point pb)
+{
+    return sqrt(pow(pa.get_cord_x()-pb.get_cord_x(), 2) + pow(pa.get_cord_y()-pb.get_cord_y(), 2));
+}
+
+// 判断是否是三角形
+bool shape_triangle::is_triangle()
+{
+    // 获取三角形的三条边
+    double distance_ab =  shape_utils::get_distance(this->point_a, this->point_b);
+    double distance_ac = shape_utils::get_distance(this->point_a, this->point_c);
+    double distance_bc = shape_utils::get_distance(this->point_b, this->point_c);
+
+    if ((distance_ab + distance_ac - distance_bc) <= 0) {
+        return false;
+    }
+
+    if ((distance_bc + distance_ac - distance_ab) <= 0) {
+        return false;
+    }
+
+    if ((distance_ac + distance_ab - distance_ac) <= 0) {
+        return false;
+    }
+
+    return true;
+}
+
+// 获取三角形的类型
+string shape_triangle::get_triangle_type()
+{
+    double distance_c = shape_utils::get_distance(this->point_a, this->point_b);
+    double distance_b = shape_utils::get_distance(this->point_a, this->point_c);
+    double distance_a = shape_utils::get_distance(this->point_b, this->point_c);
+
+    double angle_abc = (pow(distance_a, 2) + pow(distance_c, 2) - pow(distance_b, 2)) / ( 2 * distance_a * distance_c);
+    double angle_bac = (pow(distance_b, 2) + pow(distance_c, 2) - pow(distance_a, 2)) / ( 2 * distance_b * distance_c);
+    double angle_bca = (pow(distance_b, 2) + pow(distance_a, 2) - pow(distance_c, 2)) / ( 2 * distance_b * distance_a);
+
+    angle_abc = acos(angle_abc) * 180.0 / PI;
+    angle_bac = acos(angle_bac) * 180.0 / PI;
+    angle_bca = acos(angle_bca) * 180.0 / PI;
+    if (angle_abc-90.0 >1e-6 || angle_bac - 90.0  > 1e-6 || angle_bca - 90.0 > 1e-6) {
+        return "obtuse angle";
+    }
+
+    if (shape_utils::is_equal(angle_abc, 90.0, 6) || shape_utils::is_equal(angle_bac, 90.0, 6) || shape_utils::is_equal(angle_bca, 90.0, 6)) {
+        return "right angle";
+    }
+
+    return "acute angle";
 }

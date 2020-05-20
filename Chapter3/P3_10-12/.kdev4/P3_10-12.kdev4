@@ -8,16 +8,38 @@ ProjectRootRelative=./
 
 [CMake][CMake Build Directory 0]
 Build Directory Path=file:///root/Sources/bigcpp3_my_solution/Chapter3/P3_10-12/build
-Build Type=Debug
+Build Type=DEBUG
 CMake Binary=file:///usr/bin/cmake
 Environment Profile=
 Extra Arguments=
-Install Directory=
+Install Directory=file:///usr/local
 
 [Defines And Includes][Compiler]
 Name=GCC
 Path=gcc
 Type=GCC
+
+[Launch]
+Launch Configurations=Launch Configuration 0
+
+[Launch][Launch Configuration 0]
+Configured Launch Modes=debug
+Configured Launchers=gdb
+Name=p3_10-12
+Type=Native Application
+
+[Launch][Launch Configuration 0][Data]
+Arguments=
+Configured from ProjectItem=P3_10-12,p3_10-12
+Dependencies=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x00)
+Dependency Action=Nothing
+EnvironmentGroup=
+Executable=file:///root/Sources/bigcpp3_my_solution/Chapter3/P3_10-12/
+External Terminal=konsole --noclose --workdir %workdir -e %exe
+Project Target=P3_10-12,p3_10-12
+Use External Terminal=true
+Working Directory=file:///root/Sources/bigcpp3_my_solution/Chapter3/P3_10-12/build/
+isExecutable=false
 
 [Project]
 VersionControlSupport=kdevgit

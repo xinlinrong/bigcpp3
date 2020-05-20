@@ -86,7 +86,47 @@ static void bigcpp_p3_10_prog()
 // 项目 p3_11
 static void bigcpp_p3_11_prog()
 {
+    string cord_point_a{};
+    string cord_point_b{};
+    string cord_point_c{};
 
+    // 输入并检查 point a
+    cout << "Input coordinate point a:";
+    cin >> cord_point_a;
+    if (!shape_utils::check_coordinate_line(cord_point_a)) {
+        cerr << "input point a is not a valid coordinate" << endl;
+        return;
+    }
+
+    // 输入并检查 point b
+    cout << "Input coordinate point b:";
+    cin >> cord_point_b;
+    if (!shape_utils::check_coordinate_line(cord_point_b)) {
+        cerr << "input point b is not a valid coordinate" << endl;
+        return;
+    }
+
+    // 输入并检查 point c
+    cout << "Input coordinate point c:";
+    cin >> cord_point_c;
+    if (!shape_utils::check_coordinate_line(cord_point_c)) {
+        cerr << "input point c is not a valid coordinate" << endl;
+        return;
+    }
+
+    // 初始化
+    shape_point point_a{ shape_utils::get_coordinate_x(cord_point_a), shape_utils::get_coordinate_y(cord_point_a)};
+    shape_point point_b{ shape_utils::get_coordinate_x(cord_point_b), shape_utils::get_coordinate_y(cord_point_b)};
+    shape_point point_c{ shape_utils::get_coordinate_x(cord_point_c), shape_utils::get_coordinate_y(cord_point_c)};
+
+    shape_triangle triangle{point_a, point_b, point_c};
+    if (!triangle.is_triangle()) {
+        cerr << "point a,b, c is not a valid triangle" << endl;
+        return;
+    }
+
+    cout << "triangle is " << triangle.get_triangle_type();
+    return;
 }
 
 // 项目 p3_12
