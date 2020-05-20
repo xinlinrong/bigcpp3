@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <cmath>
 #include <vector>
 #include <utility>
 
@@ -103,4 +104,10 @@ double shape_utils::get_coordinate_y(string line)
     // 遍历并获取坐标 X
     vector<string> vcoord = get_coordinate(line);
     return stod(vcoord[1]);
+}
+
+// 近似相等
+bool shape_utils::is_equal(double numericFirst, double numericSecond, int scale)
+{
+    return (abs(numericFirst - numericSecond) < pow(10, -1 * scale));
 }

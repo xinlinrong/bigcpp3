@@ -23,6 +23,8 @@ namespace shape {
             static double get_coordinate_x(string line);
             // 获取 y 坐标
             static double get_coordinate_y(string line);
+            // 近似相等
+            static bool is_equal(double numericFirst, double numericSecond, int scale);
     };
 
     class shape_point
