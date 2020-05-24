@@ -40,6 +40,8 @@ namespace shape {
             static bool is_equal(double numericFirst, double numericSecond, int scale);
             // 获取两点之间的距离
             static double get_distance(shape_point pa, shape_point pb);
+           // 判断两个点是否相等
+           static bool is_equal_point(shape_point pa, shape_point pb);
     };
 
     // 三角形
@@ -56,6 +58,33 @@ namespace shape {
             bool is_triangle();
             // 获取三角形的类型
             string get_triangle_type();
+    };
+
+    // 四边形
+    class shape_quadrilateral
+    {
+        private:
+            // 点
+            shape_point point_a;
+            shape_point point_b;
+            shape_point point_c;
+            shape_point point_d;
+            // 角度
+            double angle_dab{0.00};
+            double angle_abc{0.00};
+            double angle_bcd{0.00};
+            double angle_cda{0.00};
+            // 直线长度
+            double distance_ab{0.00};
+            double distance_bc{0.00};
+            double distance_cd{0.00};
+            double distance_da{0.00};
+        public:
+            shape_quadrilateral(shape_point pa, shape_point pb, shape_point pc, shape_point pd):point_a{pa}, point_b{pb}, point_c{pc}, point_d{pd}{};
+            static bool check_avaliable(shape_point pa, shape_point pb, shape_point pc, shape_point pd);
+            static bool check_triangle_3point(shape_point pa, shape_point pb, shape_point pc);
+            void init();
+            string get_quadrilateral_type();  
     };
 } // namespace
 } // namespace 
