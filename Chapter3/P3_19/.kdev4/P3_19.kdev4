@@ -1,5 +1,5 @@
 [Buildset]
-BuildItems=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x01\x00\x00\x00\x0b\x00\x00\x00\x00\x01\x00\x00\x00\n\x00P\x003\x00_\x001\x007)
+BuildItems=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x01\x00\x00\x00\x0b\x00\x00\x00\x00\x01\x00\x00\x00\n\x00P\x003\x00_\x001\x009)
 
 [CMake]
 Build Directory Count=1
@@ -7,7 +7,7 @@ Current Build Directory Index=0
 ProjectRootRelative=./
 
 [CMake][CMake Build Directory 0]
-Build Directory Path=file:///root/Sources/bigcpp3_my_solution/Chapter3/P3_17/build
+Build Directory Path=file:///root/Sources/bigcpp3_my_solution/Chapter3/P3_19/build
 Build Type=Debug
 CMake Binary=file:///usr/bin/cmake
 Environment Profile=
@@ -25,20 +25,20 @@ Launch Configurations=Launch Configuration 0
 [Launch][Launch Configuration 0]
 Configured Launch Modes=execute
 Configured Launchers=nativeAppLauncher
-Name=p3_17
+Name=p3_19
 Type=Native Application
 
 [Launch][Launch Configuration 0][Data]
 Arguments=
-Configured from ProjectItem=P3_17,p3_17
+Configured from ProjectItem=P3_19,p3_19
 Dependencies=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x00)
 Dependency Action=Nothing
 EnvironmentGroup=
-Executable=file:///root/Sources/bigcpp3_my_solution/Chapter3/P3_17/
+Executable=file:///root/Sources/bigcpp3_my_solution/Chapter3/P3_19/
 External Terminal=konsole --noclose --workdir %workdir -e %exe
-Project Target=P3_17,p3_17
+Project Target=P3_19,p3_19
 Use External Terminal=true
-Working Directory=file:///root/Sources/bigcpp3_my_solution/Chapter3/P3_17/build/
+Working Directory=file:///root/Sources/bigcpp3_my_solution/Chapter3/P3_19/build/
 isExecutable=false
 
 [Project]
