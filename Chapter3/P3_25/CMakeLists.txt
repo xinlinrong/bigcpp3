@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 2.6)
+project(p3_25)
+
+add_definitions(-std=c++11)
+add_executable(p3_25 main.cpp)
+
+install(TARGETS p3_25 RUNTIME DESTINATION bin)
