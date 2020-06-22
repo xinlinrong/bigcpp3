@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 #include <string>
 
 using namespace std;
@@ -40,7 +41,7 @@ int prog_e4_18()
 {
     for (int i = 1; i <= 10; ++i) {
         for (int j = 1; j <= 10; ++j) {
-            cout << i * j << " ";
+            cout << setfill(' ') << setw(4) << i * j << " ";
         }
         cout << endl;
     }
